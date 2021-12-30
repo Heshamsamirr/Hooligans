@@ -1,0 +1,1011 @@
+:root {
+    --main-color: #6b8e4e
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    line-height: 1.8;
+    color: rgb(71, 70, 70);
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+/* <!-- Start setting box --> */
+
+.setting-box {
+    opacity: .9;
+    position: fixed;
+    z-index: 1000;
+    position: fixed;
+    top: 25%;
+    left: -200px;
+    background-color: #f3f3f3;
+    width: 200px;
+    transition: all .8s;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 2%;
+    padding: px 0px;
+}
+
+
+.setting-box .counte {
+    right: -45px;
+    position: absolute;
+    top: 35%;
+    background-color: #f3f3f3;
+    margin-top: 18px;
+    cursor: pointer;
+    color: var(--main-color);
+    font-size: 25px;
+    float: left;
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 25%;
+    padding: 10px;
+}
+
+.open {
+
+    left: 0px;
+
+}
+
+.setting-box .setting-container {
+    padding: 3px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.13);
+    margin: 10px 14px;
+    border-radius: 5%;
+}
+
+.setting-box .setting-container h5 {
+    padding: 8px;
+    margin: 0px;
+}
+
+.setting-box .color-item {
+    height: 25px;
+    width: 25px;
+    background-color: #6b8e4e;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 4px;
+    opacity: .5;
+    cursor: pointer;
+}
+
+.setting-box .color-item.active {
+    opacity: 1;
+    border-radius: 15%;
+}
+
+.setting-box .color-item:first-child {
+    background-color: #6b8e4e;
+
+}
+
+.setting-box .color-item:nth-child(3) {
+
+    background-color: #f58f7c;
+}
+
+.setting-box .color-item:nth-child(4) {
+
+    background-color: #2471A3;
+}
+
+.setting-box .color-item:nth-child(5) {
+
+    background-color: #E67E22;
+}
+
+.setting-box .color-item:nth-child(6) {
+
+    background-color: #566573;
+}
+
+.setting-box .color-item:nth-child(7) {
+
+    background-color: #8E44AD;
+}
+
+.setting-box .color-item:nth-child(8) {
+
+    background-color: rgb(185, 64, 64);
+}
+
+.setting-box .color-item:nth-child(9) {
+
+    background-color: #40E0D0;
+}
+
+.setting-box .random-background {
+    margin-bottom: 10px;
+}
+
+.setting-box .random-background .yes, .setting-box .random-background .no {
+    background-color: var(--main-color);
+    color: white;
+    font-size: 12px;
+    padding: 2px 10px;
+    margin: 3px;
+    cursor: pointer;
+    border-radius: 15%;
+    opacity: .5;
+    margin-bottom: 15px;
+}
+
+.setting-box .random-background span.active {
+    opacity: 1;
+}
+
+.setting-box .setting-container h4 {
+    margin: 10px 10px;
+
+}
+
+/* <!-- End setting box --> */
+
+/* <!-- Start Nav-bullets section --> */
+.nav-bullets {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    width: 40px;
+}
+
+.nav-bullets .bullet {
+    height: 20px;
+    width: 20px;
+    border: 3px solid var(--main-color);
+    border-radius: 50%;
+    margin: 15px auto;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.nav-bullets .bullet:hover .tooltip {
+    display: block;
+}
+
+.nav-bullets .bullet .tooltip {
+    background-color: var(--main-color);
+    color: white;
+    width: 100px;
+    position: absolute;
+    top: -7px;
+    right: 30px;
+    padding: 5px;
+    text-align: center;
+    pointer-events: none;
+    display: none;
+
+}
+
+.nav-bullets .bullet .tooltip::before {
+    content: '';
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent transparent transparent var(--main-color);
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    right: -20px;
+    top: 5px;
+}
+
+.setting-box .setting-container .bullets {
+    margin-bottom: 10px;
+
+}
+
+.setting-box .bullets .yes, .setting-box .bullets .no {
+    background-color: var(--main-color);
+    color: white;
+    font-size: 12px;
+    padding: 2px 10px;
+    margin: 3px;
+    cursor: pointer;
+    border-radius: 15%;
+    opacity: .5;
+    margin-bottom: 15px;
+
+}
+
+.setting-box .bullets span.active {
+    opacity: 1;
+}
+
+.setting-box .reset .yes {
+    background-color: var(--main-color);
+    color: white;
+    font-size: 12px;
+    padding: 2px 10px;
+    margin: 3px;
+    cursor: pointer;
+    border-radius: 15%;
+    opacity: 1;
+    margin-bottom: 15px;
+}
+
+.setting-box .setting-container .reset {
+    margin-bottom: 10px;
+}
+
+/* @media (max-width: 991px) {
+    .nav-bullets {
+        right: 34px;}
+} */
+
+/* <!-- End Nav-bullets section --> */
+
+/* <!-- Start First section --> */
+.first-page {
+
+    min-height: 100vh;
+    background-image: url('../imgs/6.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.first-page .overlay {
+    background-color: rgb(0, 0, 0, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.header-area {
+    position: relative;
+    color: white;
+    z-index: 2;
+    padding: 25px;
+    display: flex;
+}
+
+.header-area .logo {
+    color: var(--main-color);
+    font-size: 50px;
+    font-weight: 900;
+    font-family: 'Corinthia', cursive;
+}
+
+.header-area .links-container {
+    width: 100%;
+    text-align: right;
+}
+
+.header-area .links {
+    list-style: none;
+}
+
+.header-area li {
+    font-size: 20px;
+    display: inline;
+    margin: 15px;
+}
+
+.header-area a {
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+}
+
+.header-area a.active, .header-area a:hover {
+    color: var(--main-color);
+
+}
+
+.header-area .toggle-menu {
+    background: none;
+    border: none;
+    width: 40px;
+    cursor: pointer;
+    margin-top: 20px;
+    /* margin-left: 150px; */
+    text-align: right;
+    display: none;
+
+}
+
+.header-area .toggle-menu.menu-active::before {
+
+    content: '';
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    position: absolute;
+    top: 55px;
+    right: 35px;
+
+}
+
+.header-area .toggle-menu span {
+    display: block;
+    background-color: white;
+    height: 3px;
+    margin-bottom: 4px;
+}
+
+.text {
+    color: white;
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text h1 {
+    margin: 0px;
+    font-size: 35px;
+}
+
+.text h1 span {
+    color: var(--main-color);
+    font-family: 'Corinthia', cursive;
+
+}
+
+@media (max-width: 1230px) {
+    .header-area .links {
+        display: none;
+    }
+
+    .header-area .links.open {
+        background-color: white;
+        padding: 10px;
+        display: block;
+        z-index: 3333;
+        position: absolute;
+        left: 0px;
+        top: 50px;
+        width: 100%;
+        border-radius: 5px;
+        margin-top: 25px;
+        padding-left: 30px;
+        text-align: left;
+    }
+
+    .header-area .links.open li {
+        display: block;
+        margin: 5px;
+    }
+
+    .header-area .links.open li a {
+        color: black;
+        font-weight: bold;
+        transition: all .3s;
+    }
+
+    .header-area .links.open li a:hover {
+        color: var(--main-color);
+    }
+
+    .header-area .toggle-menu {
+        display: inline-block;
+    }
+}
+
+/* <!-- End First section --> */
+
+/* <!-- Start about us section --> */
+.about-us {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+}
+
+.about-us .info-box {
+    flex: 1;
+}
+
+.about-us .info-box h2 {
+    text-align: center;
+    font-family: 'Yuji Hentaigana Akebono', cursive;
+    font-size: 35px;
+    color: var(--main-color);
+}
+
+.about-us .info-box p {
+    line-height: 1.8;
+    color: #777;
+}
+
+.about-us .img-box {
+    display: flex;
+    flex: 1;
+    text-align: center;
+    padding-top: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us .img-box img {
+    width: 60%;
+}
+
+@media (max-width:575px) {
+    .about-us {
+        display: block;
+        text-align: center;
+    }
+
+    .about-us .img-box img {
+        width: 100%;
+    }
+}
+
+@media (max-width:767px) {
+    .about-us {
+        display: block;
+        text-align: center;
+    }
+
+    .about-us .img-box img {
+        width: 100%;
+    }
+}
+
+@media (max-width:1200px) {
+
+    .about-us .img-box img {
+        width: 100%;
+    }
+
+    .about-us .info-box p {
+        line-height: 1.3;
+        color: #777;
+    }
+}
+
+/* <!-- End about us section --> */
+
+/* <!-- Start Services section --> */
+.Services {
+    background-color: rgb(204 204 204 / 5%);
+    padding: 50px 0px;
+
+
+}
+
+.Services .container {
+    display: flex;
+}
+
+.Services h2 {
+    margin: 0px;
+    text-align: center;
+    font-family: 'Yuji Hentaigana Akebono', cursive;
+    font-size: 35px;
+    color: var(--main-color);
+    margin-bottom: 35px;
+}
+
+.Services .info-box {
+    margin: 25px;
+    text-align: center;
+    flex: 1;
+    transition: all .5s;
+    padding: 20px 15px;
+}
+
+.Services .info-box i {
+    border: 10px solid var(--main-color);
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 50px;
+}
+
+.Services .info-box h3 {
+    font-size: 28px;
+}
+
+.Services .info-box p {
+    line-height: 1.6;
+
+}
+
+.Services .info-box:hover {
+    border-radius: 10%;
+    background-color: var(--main-color);
+    color: white;
+}
+
+@media (max-width:991px) {
+    .Services .container {
+        display: block;
+    }
+
+
+}
+
+@media (max-width:1200px) {
+    .Services .info-box h3 {
+        font-size: 20px;
+    }
+
+}
+
+
+
+/* <!-- End Services section --> */
+
+/* <!-- Start Gallery section --> */
+.gallery {
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.gallery h2 {
+    margin: 0px;
+    text-align: center;
+    font-family: 'Yuji Hentaigana Akebono', cursive;
+    font-size: 35px;
+    color: var(--main-color);
+    margin-bottom: 50px;
+}
+
+.gallery .img-box {
+    text-align: center;
+
+}
+
+.gallery .img-box img {
+    width: 250px;
+    height: 150px;
+    padding: 3px;
+    background-color: #f6f6f6;
+    border: 3px solid #ccc;
+    border-radius: 5%;
+    margin: 5px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.gallery .img-box img:hover {
+    border: 3px solid var(--main-color);
+}
+
+#boxConatiner {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: 10000000;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxInner {
+
+    background-image: url(../imgs/1.jpg);
+    background-size: 100% 100%;
+    width: 60%;
+    height: 500px;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boxInner i {
+    font-size: 25px;
+    cursor: pointer;
+    color: whitesmoke;
+
+}
+
+#close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+}
+
+@media(max-width:600px) {
+    .boxInner {
+        height: 250px;
+        width: 75%;
+    }
+}
+
+/* <!-- End Gallery section --> */
+
+/* <!-- Start Timeline  section --> */
+.timeline {
+    padding: 50px 0px;
+    background-color: #f3f3f3;
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    width: 2px;
+    height: 50%;
+    background-color: var(--main-color);
+    position: absolute;
+    right: 50%;
+    top: 35%;
+
+}
+
+.timeline h2 {
+    margin: 0px;
+    text-align: center;
+    font-family: 'Yuji Hentaigana Akebono', cursive;
+    font-size: 35px;
+    color: var(--main-color);
+
+}
+
+.timeline .text-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.timeline .text-box .words-box {
+    margin: 0px 50px;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5%;
+}
+
+.timeline .text-box .words-box h3 {
+    color: var(--main-color);
+    text-align: center;
+    font-size: 25px;
+}
+
+
+
+@media (max-width:991px) {
+    .timeline .text-box {
+        display: block;
+        text-align: center;
+    }
+
+    .timeline::before {
+        display: none;
+    }
+
+
+}
+
+/* <!-- End Timeline section --> */
+
+
+/* <!-- Start Features section --> */
+
+.features {
+
+    padding: 50px 0;
+
+}
+
+
+
+.features h2 {
+    margin: 0px;
+    text-align: center;
+    font-family: 'Yuji Hentaigana Akebono', cursive;
+    font-size: 35px;
+    color: var(--main-color);
+    margin-bottom: 30px;
+}
+
+.features .feat {
+    width: calc(100%/3);
+    float: left;
+    text-align: center;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+.features .feat h4 {
+    margin: 0px;
+    font-size: 25px;
+    margin-top: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.features .feat h4::before {
+    content: '';
+    position: absolute;
+    bottom: 15px;
+    right: 50%;
+    width: 50px;
+    height: 2px;
+    background-color: var(--main-color);
+    margin: -25px
+}
+
+.features .feat img {
+    width: 125px;
+    height: 125px;
+    padding: 3px;
+    background-color: #f6f6f6;
+    border: 3px solid #ccc;
+    border-radius: 5%;
+    margin: 5px;
+    transition: all .3s;
+}
+
+@media (max-width:767px) {
+    .features .feat {
+        width: 50%;
+    }
+}
+
+@media (max-width:991px) {
+    .features .feat {
+        width: 100%;
+    }
+}
+
+/* <!-- End Features section --> */
+
+
+/* <!-- Start testimonials section --> */
+
+.testimonials {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+.testimonials::before {
+
+    content: '';
+    width: 50%;
+    height: 100%;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.testimonials::after {
+
+    content: '';
+    width: 50%;
+    height: 100%;
+    background-color: rgb(36, 35, 35);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.testimonials h2 {
+
+    margin: 0px;
+    text-align: center;
+    font-family: 'Yuji Hentaigana Akebono', cursive;
+    font-size: 35px;
+    color: white;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.testimonials .ts-box {
+    position: relative;
+    z-index: 2;
+    float: left;
+    background-color: #f3f3f3;
+    width: calc(98%/3);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10%;
+}
+
+.testimonials .ts-box:not(:last-of-type) {
+    margin-right: 1%;
+}
+
+.testimonials .ts-info h4 {
+    font-size: 25px;
+    color: var(--main-color);
+    overflow: hidden;
+    margin: 5px 0px 0px 0px;
+}
+
+.testimonials .ts-info img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.testimonials .ts-info p {
+    margin: 0px;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+@media (max-width:930px) {
+    .testimonials .ts-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* <!-- End testimonials section --> */
+
+/* <!-- Start contact section --> */
+.contact {
+    background-image: url(../imgs/worldmap.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.contact h2 {
+
+    margin: 0px;
+    text-align: center;
+    font-family: 'Yuji Hentaigana Akebono', cursive;
+    font-size: 35px;
+    color: var(--main-color);
+    margin-bottom: 30px;
+
+    padding-top: 50px;
+}
+
+.contact .container {
+    position: relative;
+    z-index: 2;
+}
+
+.contact .overlay {
+    background-color: rgb(0, 0, 0, 0.1);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.contact form {
+    overflow: hidden;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.contact .left {
+    float: left;
+    width: 49%;
+}
+
+.contact .right {
+    float: right;
+    width: 49%;
+}
+
+.contact input:not([type='submit']),
+.contact textarea {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 2%;
+    border: 1px solid black;
+    background-color: rgba(218, 218, 218, 0.19);
+
+}
+
+.contact input:not([type='submit']):focus,
+.contact textarea:focus {
+    outline: 1px solid var(--main-color);
+}
+
+.contact textarea {
+    height: 140px;
+}
+
+.contact form input[type="submit"] {
+
+    width: 100%;
+    height: 40px;
+    border-color: transparent;
+    background-color: var(--main-color);
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width:767px) {
+    .contact .left {
+        float: none;
+        width: 80%;
+        margin: auto;
+    }
+
+    .contact .right {
+        float: none;
+        width: 80%;
+        margin: auto;
+    }
+}
+
+/* <!-- End contact section --> */
+/* <!-- Start Footer Section  --> */
+footer {
+    background-color: var(--main-color);
+    padding: 30px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+}
+
+/* <!-- End Footer Section  --> */
+
+
+/* Start Grid System */
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1370px;
+    }
+}
+
+/* End Grid System */
